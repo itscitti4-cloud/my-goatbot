@@ -1,30 +1,34 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express().use(bodyParser.json());
+const fs = require("fs-extra");
+const login = require("fca-unofficial");
+const express = require("express");
+const app = express();
 
-const PORT = process.env.PORT || 3000;
+// Render Keep-Alive
+app.get('/', (req, res) => res.send('Goatbot is Running!'));
+app.listen(process.env.PORT || 3000, () => console.log("Server is ready"));
 
-app.get('/', (req, res) => {
-  res.send('Bot is running successfully!');
+// account.txt চেক করা
+if (!fs.existsSync('account.txt')) {
+    console.error("Error: account.txt ফাইলটি পাওয়া যায়নি!");
+    process.exit(1);
+}
+
+const appState = JSON.parse(fs.readFileSync('account.txt', 'utf8'));
+
+login({appState: appState}, (err, api) => {
+    if(err) return console.error("Login Error: ", err);
+
+    console.log("বট সফলভাবে লগইন হয়েছে!");
+
+    api.listenMqtt((err, event) => {
+        if(err) return;
+        if (event.type === "message") {
+            const msg = event.body ? event.body.toLowerCase() : "";
+
+            if (msg === "hi") {
+                api.sendMessage("Hello! আমি আপনার নিজের তৈরি Goatbot V2.", event.threadID);
+            }
+        }
+    });
 });
-
-// Facebook Webhook Verification
-app.get('/webhook', (req, res) => {
-  let VERIFY_TOKEN = "my_secret_token_123"; 
-  let mode = req.query['hub.mode'];
-  let token = req.query['hub.verify_token'];
-  let challenge = req.query['hub.challenge'];
-
-  if (mode && token) {
-    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
-      console.log('WEBHOOK_VERIFIED');
-      res.status(200).send(challenge);
-    } else {
-      res.sendStatus(403);      
-    }
-  }
-});
-
-app.listen(PORT, () => console.log(`Server is live on port ${PORT}`));
-
 
