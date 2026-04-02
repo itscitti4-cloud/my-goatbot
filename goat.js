@@ -4,7 +4,7 @@ const path = require("path");
 
 const config = {
     prefix: "/",
-    adminID: "100086354826910" // আপনার আইডি দিন
+    adminID: "61586632438983" // আপনার আইডি দিন
 };
 
 const commands = new Map();
