@@ -1,0 +1,414 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.12.1
+2 info using node@v25.8.2
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install axios fca-unofficial express fs-extra
+7 verbose argv "install" "axios" "fca-unofficial" "express" "fs-extra"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-04-02T07_41_54_104Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-04-02T07_41_54_104Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+12 silly idealTree buildDeps
+13 silly fetch manifest axios@^1.14.0
+14 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/axios 591ms (cache revalidated)
+16 silly packumentCache full:https://registry.npmjs.org/axios set size:708948 disposed:false
+17 silly fetch manifest express@^5.2.1
+18 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/express 406ms (cache revalidated)
+20 silly packumentCache full:https://registry.npmjs.org/express set size:801257 disposed:false
+21 silly fetch manifest fca-unofficial@^1.3.10
+22 silly packumentCache full:https://registry.npmjs.org/fca-unofficial cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/fca-unofficial 458ms (cache revalidated)
+24 silly packumentCache full:https://registry.npmjs.org/fca-unofficial set size:170576 disposed:false
+25 silly fetch manifest fs-extra@^11.3.4
+26 silly packumentCache full:https://registry.npmjs.org/fs-extra cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/fs-extra 62ms (cache revalidated)
+28 silly packumentCache full:https://registry.npmjs.org/fs-extra set size:232595 disposed:false
+29 silly placeDep ROOT axios@1.14.0 REPLACE for: home@1.0.0 want: ^1.14.0
+30 silly placeDep ROOT express@5.2.1 REPLACE for: home@1.0.0 want: ^5.2.1
+31 silly placeDep ROOT fca-unofficial@1.3.10 REPLACE for: home@1.0.0 want: ^1.3.10
+32 silly placeDep ROOT fs-extra@11.3.4 REPLACE for: home@1.0.0 want: ^11.3.4
+33 silly reify mark retired [
+33 silly reify   '/data/data/com.termux/files/home/node_modules/mqtt',
+33 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt',
+33 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt_pub',
+33 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt_sub'
+33 silly reify ]
+34 silly reify mark retired [
+34 silly reify   '/data/data/com.termux/files/home/node_modules/sshpk',
+34 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-conv',
+34 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-sign',
+34 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-verify'
+34 silly reify ]
+35 silly reify mark retired [
+35 silly reify   '/data/data/com.termux/files/home/node_modules/uuid',
+35 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/uuid'
+35 silly reify ]
+36 silly reify moves {
+36 silly reify   '/data/data/com.termux/files/home/node_modules/mqtt': '/data/data/com.termux/files/home/node_modules/.mqtt-biWCnyJ8',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt': '/data/data/com.termux/files/home/node_modules/.bin/.mqtt-gDiFSvbf',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt_pub': '/data/data/com.termux/files/home/node_modules/.bin/.mqtt_pub-GpTALfF8',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/mqtt_sub': '/data/data/com.termux/files/home/node_modules/.bin/.mqtt_sub-3JZTi7Pk',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/sshpk': '/data/data/com.termux/files/home/node_modules/.sshpk-K4z1JQby',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-conv': '/data/data/com.termux/files/home/node_modules/.bin/.sshpk-conv-9xkAzDbt',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-sign': '/data/data/com.termux/files/home/node_modules/.bin/.sshpk-sign-dZBA3xp3',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/sshpk-verify': '/data/data/com.termux/files/home/node_modules/.bin/.sshpk-verify-Px9wB6HX',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/uuid': '/data/data/com.termux/files/home/node_modules/.uuid-sjrjK6i5',
+36 silly reify   '/data/data/com.termux/files/home/node_modules/.bin/uuid': '/data/data/com.termux/files/home/node_modules/.bin/.uuid-THLr3ChO'
+36 silly reify }
+37 silly audit bulk request {
+37 silly audit   accepts: [ '2.0.0' ],
+37 silly audit   'agent-base': [ '5.1.1' ],
+37 silly audit   ajv: [ '6.14.0' ],
+37 silly audit   ansi: [ '0.3.1' ],
+37 silly audit   'are-we-there-yet': [ '1.0.6' ],
+37 silly audit   'readable-stream': [ '2.3.8', '3.6.2' ],
+37 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+37 silly audit   string_decoder: [ '1.1.1', '1.3.0' ],
+37 silly audit   asn1: [ '0.2.6' ],
+37 silly audit   'assert-plus': [ '1.0.0' ],
+37 silly audit   'async-limiter': [ '1.0.1' ],
+37 silly audit   asynckit: [ '0.4.0' ],
+37 silly audit   'aws-sign2': [ '0.7.0' ],
+37 silly audit   aws4: [ '1.13.2' ],
+37 silly audit   'balanced-match': [ '1.0.2' ],
+37 silly audit   'base64-js': [ '1.5.1' ],
+37 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+37 silly audit   bl: [ '4.1.0' ],
+37 silly audit   bluebird: [ '2.11.0' ],
+37 silly audit   'body-parser': [ '2.2.2' ],
+37 silly audit   boolbase: [ '1.0.0' ],
+37 silly audit   'brace-expansion': [ '1.1.13' ],
+37 silly audit   buffer: [ '5.7.1' ],
+37 silly audit   'buffer-from': [ '1.1.2' ],
+37 silly audit   bytes: [ '3.1.2' ],
+37 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+37 silly audit   'call-bound': [ '1.0.4' ],
+37 silly audit   'callback-stream': [ '1.1.0' ],
+37 silly audit   caseless: [ '0.12.0' ],
+37 silly audit   cheerio: [ '0.22.0' ],
+37 silly audit   'combined-stream': [ '1.0.8' ],
+37 silly audit   commist: [ '1.1.0' ],
+37 silly audit   'concat-map': [ '0.0.1' ],
+37 silly audit   'concat-stream': [ '1.6.2' ],
+37 silly audit   'content-disposition': [ '1.0.1' ],
+37 silly audit   'content-type': [ '1.0.5' ],
+37 silly audit   cookie: [ '0.7.2' ],
+37 silly audit   'cookie-signature': [ '1.2.2' ],
+37 silly audit   'core-util-is': [ '1.0.2' ],
+37 silly audit   'css-select': [ '1.2.0' ],
+37 silly audit   'css-what': [ '2.1.3' ],
+37 silly audit   d: [ '1.0.2' ],
+37 silly audit   dashdash: [ '1.14.1' ],
+37 silly audit   debug: [ '4.4.3' ],
+37 silly audit   'delayed-stream': [ '1.0.0' ],
+37 silly audit   delegates: [ '1.0.0' ],
+37 silly audit   depd: [ '2.0.0' ],
+37 silly audit   'dom-serializer': [ '0.1.1' ],
+37 silly audit   domelementtype: [ '1.3.1' ],
+37 silly audit   domhandler: [ '2.4.2' ],
+37 silly audit   domutils: [ '1.5.1' ],
+37 silly audit   'dunder-proto': [ '1.0.1' ],
+37 silly audit   duplexify: [ '3.7.1' ],
+37 silly audit   'ecc-jsbn': [ '0.1.2' ],
+37 silly audit   'ee-first': [ '1.1.1' ],
+37 silly audit   encodeurl: [ '2.0.0' ],
+37 silly audit   'end-of-stream': [ '1.4.5' ],
+37 silly audit   entities: [ '1.1.2' ],
+37 silly audit   'es-define-property': [ '1.0.1' ],
+37 silly audit   'es-errors': [ '1.3.0' ],
+37 silly audit   'es-object-atoms': [ '1.1.1' ],
+37 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+37 silly audit   'es5-ext': [ '0.10.64' ],
+37 silly audit   'es6-iterator': [ '2.0.3' ],
+37 silly audit   'es6-map': [ '0.1.5' ],
+37 silly audit   'es6-set': [ '0.1.6' ],
+37 silly audit   'es6-symbol': [ '3.1.4' ],
+37 silly audit   'escape-html': [ '1.0.3' ],
+37 silly audit   esniff: [ '2.0.1' ],
+37 silly audit   etag: [ '1.8.1' ],
+37 silly audit   'event-emitter': [ '0.3.5' ],
+37 silly audit   ext: [ '1.7.0' ],
+37 silly audit   extend: [ '3.0.2' ],
+37 silly audit   extsprintf: [ '1.3.0' ],
+37 silly audit   'fast-deep-equal': [ '3.1.3' ],
+37 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+37 silly audit   finalhandler: [ '2.1.1' ],
+37 silly audit   'follow-redirects': [ '1.15.11' ],
+37 silly audit   'forever-agent': [ '0.6.1' ],
+37 silly audit   'form-data': [ '4.0.5', '2.3.3' ],
+37 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+37 silly audit   'mime-types': [ '2.1.35', '3.0.2' ],
+37 silly audit   forwarded: [ '0.2.0' ],
+37 silly audit   fresh: [ '2.0.0' ],
+37 silly audit   'fs.realpath': [ '1.0.0' ],
+37 silly audit   'function-bind': [ '1.1.2' ],
+37 silly audit   gauge: [ '1.2.7' ],
+37 silly audit   'get-intrinsic': [ '1.3.0' ],
+37 silly audit   'get-proto': [ '1.0.1' ],
+37 silly audit   getpass: [ '0.1.7' ],
+37 silly audit   glob: [ '7.2.3' ],
+37 silly audit   'glob-parent': [ '3.1.0' ],
+37 silly audit   'glob-stream': [ '6.1.0' ],
+37 silly audit   gopd: [ '1.2.0' ],
+37 silly audit   'graceful-fs': [ '4.2.11' ],
+37 silly audit   'har-schema': [ '2.0.0' ],
+37 silly audit   'har-validator': [ '5.1.5' ],
+37 silly audit   'has-symbols': [ '1.1.0' ],
+37 silly audit   'has-tostringtag': [ '1.0.2' ],
+37 silly audit   'has-unicode': [ '2.0.1' ],
+37 silly audit   hasown: [ '2.0.2' ],
+37 silly audit   'help-me': [ '1.1.0' ],
+37 silly audit   htmlparser2: [ '3.10.1' ],
+37 silly audit   'http-errors': [ '2.0.1' ],
+37 silly audit   'http-signature': [ '1.2.0' ],
+37 silly audit   'https-proxy-agent': [ '4.0.0' ],
+37 silly audit   'iconv-lite': [ '0.7.2' ],
+37 silly audit   ieee754: [ '1.2.1' ],
+37 silly audit   inflight: [ '1.0.6' ],
+37 silly audit   inherits: [ '2.0.4' ],
+37 silly audit   'ipaddr.js': [ '1.9.1' ],
+37 silly audit   'is-absolute': [ '1.0.0' ],
+37 silly audit   'is-extglob': [ '2.1.1' ],
+37 silly audit   'is-glob': [ '3.1.0' ],
+37 silly audit   'is-negated-glob': [ '1.0.0' ],
+37 silly audit   'is-promise': [ '4.0.0' ],
+37 silly audit   'is-relative': [ '1.0.0' ],
+37 silly audit   'is-typedarray': [ '1.0.0' ],
+37 silly audit   'is-unc-path': [ '1.0.0' ],
+37 silly audit   'is-windows': [ '1.0.2' ],
+37 silly audit   isarray: [ '1.0.0' ],
+37 silly audit   isstream: [ '0.1.2' ],
+37 silly audit   jsbn: [ '0.1.1' ],
+37 silly audit   'json-schema': [ '0.4.0' ],
+37 silly audit   'json-schema-traverse': [ '0.4.1' ],
+37 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+37 silly audit   'json-stringify-safe': [ '5.0.1' ],
+37 silly audit   jsonfile: [ '6.2.0' ],
+37 silly audit   jsprim: [ '1.4.2' ],
+37 silly audit   leven: [ '2.1.0' ],
+37 silly audit   'lodash.assignin': [ '4.2.0' ],
+37 silly audit   'lodash.bind': [ '4.2.1' ],
+37 silly audit   'lodash.defaults': [ '4.2.0' ],
+37 silly audit   'lodash.filter': [ '4.6.0' ],
+37 silly audit   'lodash.flatten': [ '4.4.0' ],
+37 silly audit   'lodash.foreach': [ '4.5.0' ],
+37 silly audit   'lodash.map': [ '4.6.0' ],
+37 silly audit   'lodash.merge': [ '4.6.2' ],
+37 silly audit   'lodash.pad': [ '4.5.1' ],
+37 silly audit   'lodash.padend': [ '4.6.1' ],
+37 silly audit   'lodash.padstart': [ '4.6.1' ],
+37 silly audit   'lodash.pick': [ '4.4.0' ],
+37 silly audit   'lodash.reduce': [ '4.6.0' ],
+37 silly audit   'lodash.reject': [ '4.6.0' ],
+37 silly audit   'lodash.some': [ '4.6.0' ],
+37 silly audit   'math-intrinsics': [ '1.1.0' ],
+37 silly audit   'media-typer': [ '1.1.0' ],
+37 silly audit   'merge-descriptors': [ '2.0.0' ],
+37 silly audit   minimatch: [ '3.1.5' ],
+37 silly audit   minimist: [ '1.2.8' ],
+37 silly audit   mqtt: [ '3.0.0' ],
+37 silly audit   'mqtt-packet': [ '6.10.0' ],
+37 silly audit   ms: [ '2.1.3' ],
+37 silly audit   negotiator: [ '1.0.0' ],
+37 silly audit   'next-tick': [ '1.1.0' ],
+37 silly audit   npmlog: [ '1.2.1' ],
+37 silly audit   'nth-check': [ '1.0.2' ],
+37 silly audit   'oauth-sign': [ '0.9.0' ],
+37 silly audit   'object-inspect': [ '1.13.4' ],
+37 silly audit   'on-finished': [ '2.4.1' ],
+37 silly audit   once: [ '1.4.0' ],
+37 silly audit   'ordered-read-streams': [ '1.0.1' ],
+37 silly audit   parseurl: [ '1.3.3' ],
+37 silly audit   'path-dirname': [ '1.0.2' ],
+37 silly audit   'path-is-absolute': [ '1.0.1' ],
+37 silly audit   'path-to-regexp': [ '8.4.2' ],
+37 silly audit   'performance-now': [ '2.1.0' ],
+37 silly audit   'process-nextick-args': [ '2.0.1' ],
+37 silly audit   'proxy-addr': [ '2.0.7' ],
+37 silly audit   'proxy-from-env': [ '2.1.0' ],
+37 silly audit   psl: [ '1.15.0' ],
+37 silly audit   pump: [ '3.0.4', '2.0.1' ],
+37 silly audit   pumpify: [ '1.5.1' ],
+37 silly audit   punycode: [ '2.3.1' ],
+37 silly audit   qs: [ '6.15.0', '6.5.5' ],
+37 silly audit   'range-parser': [ '1.2.1' ],
+37 silly audit   'raw-body': [ '3.0.2' ],
+37 silly audit   reinterval: [ '1.1.0' ],
+37 silly audit   'remove-trailing-separator': [ '1.1.0' ],
+37 silly audit   request: [ '2.88.2' ],
+37 silly audit   router: [ '2.2.0' ],
+37 silly audit   'safer-buffer': [ '2.1.2' ],
+37 silly audit   send: [ '1.2.1' ],
+37 silly audit   'serve-static': [ '2.2.1' ],
+37 silly audit   setprototypeof: [ '1.2.0' ],
+37 silly audit   'side-channel': [ '1.1.0' ],
+37 silly audit   'side-channel-list': [ '1.0.0' ],
+37 silly audit   'side-channel-map': [ '1.0.1' ],
+37 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+37 silly audit   split2: [ '3.2.2' ],
+37 silly audit   sshpk: [ '1.18.0' ],
+37 silly audit   statuses: [ '2.0.2' ],
+37 silly audit   'stream-shift': [ '1.0.3' ],
+37 silly audit   through2: [ '2.0.5' ],
+37 silly audit   'through2-filter': [ '3.0.0' ],
+37 silly audit   'to-absolute-glob': [ '2.0.2' ],
+37 silly audit   toidentifier: [ '1.0.1' ],
+37 silly audit   'tough-cookie': [ '2.5.0' ],
+37 silly audit   'tunnel-agent': [ '0.6.0' ],
+37 silly audit   tweetnacl: [ '0.14.5' ],
+37 silly audit   type: [ '2.7.3' ],
+37 silly audit   'type-is': [ '2.0.1' ],
+37 silly audit   typedarray: [ '0.0.6' ],
+37 silly audit   ultron: [ '1.1.1' ],
+37 silly audit   'unc-path-regex': [ '0.1.2' ],
+37 silly audit   'unique-stream': [ '2.4.0' ],
+37 silly audit   universalify: [ '2.0.1' ],
+37 silly audit   unpipe: [ '1.0.0' ],
+37 silly audit   'uri-js': [ '4.4.1' ],
+37 silly audit   'util-deprecate': [ '1.0.2' ],
+37 silly audit   uuid: [ '3.4.0' ],
+37 silly audit   vary: [ '1.1.2' ],
+37 silly audit   verror: [ '1.10.0' ],
+37 silly audit   'websocket-stream': [ '5.5.2' ],
+37 silly audit   wrappy: [ '1.0.2' ],
+37 silly audit   ws: [ '3.3.3' ],
+37 silly audit   xtend: [ '4.0.2' ],
+37 silly audit   axios: [ '1.14.0' ],
+37 silly audit   express: [ '5.2.1' ],
+37 silly audit   'fca-unofficial': [ '1.3.10' ],
+37 silly audit   'fs-extra': [ '11.3.4' ]
+37 silly audit }
+38 http cache uuid@https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 0ms (cache hit)
+39 http cache sshpk@https://registry.npmjs.org/sshpk/-/sshpk-1.18.0.tgz 0ms (cache hit)
+40 http cache mqtt@https://registry.npmjs.org/mqtt/-/mqtt-3.0.0.tgz 0ms (cache hit)
+41 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 530ms
+42 silly audit report {
+42 silly audit report   'form-data': [
+42 silly audit report     {
+42 silly audit report       id: 1109540,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-fjxv-7rqg-78g4',
+42 silly audit report       title: 'form-data uses unsafe random function in form-data for choosing boundary',
+42 silly audit report       severity: 'critical',
+42 silly audit report       vulnerable_versions: '<2.5.4',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   'lodash.pick': [
+42 silly audit report     {
+42 silly audit report       id: 1106907,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-p6mc-m468-83gw',
+42 silly audit report       title: 'Prototype Pollution in lodash',
+42 silly audit report       severity: 'high',
+42 silly audit report       vulnerable_versions: '>=4.0.0 <=4.4.0',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   'nth-check': [
+42 silly audit report     {
+42 silly audit report       id: 1095141,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-rp65-9cf3-cjxr',
+42 silly audit report       title: 'Inefficient Regular Expression Complexity in nth-check',
+42 silly audit report       severity: 'high',
+42 silly audit report       vulnerable_versions: '<2.0.1',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   qs: [
+42 silly audit report     {
+42 silly audit report       id: 1113719,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-6rw7-vpxm-498p',
+42 silly audit report       title: "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion",
+42 silly audit report       severity: 'moderate',
+42 silly audit report       vulnerable_versions: '<6.14.1',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   request: [
+42 silly audit report     {
+42 silly audit report       id: 1096727,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-p8p7-x288-28g6',
+42 silly audit report       title: 'Server-Side Request Forgery in Request',
+42 silly audit report       severity: 'moderate',
+42 silly audit report       vulnerable_versions: '<=2.88.2',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   'tough-cookie': [
+42 silly audit report     {
+42 silly audit report       id: 1097682,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-72xf-g2v4-qvf3',
+42 silly audit report       title: 'tough-cookie Prototype Pollution vulnerability',
+42 silly audit report       severity: 'moderate',
+42 silly audit report       vulnerable_versions: '<4.1.3',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ],
+42 silly audit report   ws: [
+42 silly audit report     {
+42 silly audit report       id: 1098395,
+42 silly audit report       url: 'https://github.com/advisories/GHSA-3h5v-q93c-6h6q',
+42 silly audit report       title: 'ws affected by a DoS when handling a request with many HTTP headers',
+42 silly audit report       severity: 'high',
+42 silly audit report       vulnerable_versions: '>=2.1.0 <5.2.4',
+42 silly audit report       cwe: [Array],
+42 silly audit report       cvss: [Object]
+42 silly audit report     }
+42 silly audit report   ]
+42 silly audit report }
+43 silly packumentCache corgi:https://registry.npmjs.org/form-data cache-miss
+44 silly packumentCache corgi:https://registry.npmjs.org/lodash.pick cache-miss
+45 silly packumentCache corgi:https://registry.npmjs.org/nth-check cache-miss
+46 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+47 silly packumentCache corgi:https://registry.npmjs.org/request cache-miss
+48 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie cache-miss
+49 silly packumentCache corgi:https://registry.npmjs.org/ws cache-miss
+50 warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+51 http fetch GET 200 https://registry.npmjs.org/tough-cookie 509ms (cache revalidated)
+52 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie set size:56308 disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/nth-check 542ms (cache revalidated)
+54 silly packumentCache corgi:https://registry.npmjs.org/nth-check set size:12198 disposed:false
+55 http fetch GET 200 https://registry.npmjs.org/qs 548ms (cache revalidated)
+56 silly packumentCache corgi:https://registry.npmjs.org/qs set size:143799 disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/lodash.pick 577ms (cache revalidated)
+58 silly packumentCache corgi:https://registry.npmjs.org/lodash.pick set size:11394 disposed:false
+59 http fetch GET 200 https://registry.npmjs.org/request 569ms (cache revalidated)
+60 silly packumentCache corgi:https://registry.npmjs.org/request set size:129997 disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/form-data 717ms (cache revalidated)
+62 silly packumentCache corgi:https://registry.npmjs.org/form-data set size:51426 disposed:false
+63 http fetch GET 200 https://registry.npmjs.org/ws 707ms (cache revalidated)
+64 silly packumentCache corgi:https://registry.npmjs.org/ws set size:195276 disposed:false
+65 silly packumentCache corgi:https://registry.npmjs.org/cheerio cache-miss
+66 http fetch GET 200 https://registry.npmjs.org/cheerio 150ms (cache revalidated)
+67 silly packumentCache corgi:https://registry.npmjs.org/cheerio set size:70560 disposed:false
+68 silly packumentCache corgi:https://registry.npmjs.org/css-select cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/css-select 1434ms (cache revalidated)
+70 silly packumentCache corgi:https://registry.npmjs.org/css-select set size:49649 disposed:false
+71 silly packumentCache corgi:https://registry.npmjs.org/fca-unofficial cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/fca-unofficial 347ms (cache revalidated)
+73 silly packumentCache corgi:https://registry.npmjs.org/fca-unofficial set size:92568 disposed:false
+74 silly packumentCache corgi:https://registry.npmjs.org/websocket-stream cache-miss
+75 http fetch GET https://registry.npmjs.org/websocket-stream attempt 1 failed with ECONNABORTED
+76 http fetch GET 200 https://registry.npmjs.org/websocket-stream 19707ms (cache revalidated)
+77 silly packumentCache corgi:https://registry.npmjs.org/websocket-stream set size:43375 disposed:false
+78 silly packumentCache corgi:https://registry.npmjs.org/mqtt cache-miss
+79 http fetch GET 200 https://registry.npmjs.org/mqtt 350ms (cache revalidated)
+80 silly packumentCache corgi:https://registry.npmjs.org/mqtt set size:332424 disposed:false
+81 silly CHANGE node_modules/uuid
+82 silly CHANGE node_modules/sshpk
+83 silly CHANGE node_modules/mqtt
+84 verbose cwd /data/data/com.termux/files/home
+85 verbose os Linux 5.10.233-android12-9-00010-g70ad1d50b2d2-ab14134993
+86 verbose node v25.8.2
+87 verbose npm  v11.12.1
+88 verbose exit 0
+89 info ok

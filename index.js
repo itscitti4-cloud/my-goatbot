@@ -1,34 +1,27 @@
-const fs = require("fs-extra");
-const login = require("fca-unofficial");
-const express = require("express");
+const { spawn } = require("child_process");
+const express = require('express');
 const app = express();
+const port = process.env.PORT || 10000;
 
-// Render Keep-Alive
-app.get('/', (req, res) => res.send('Goatbot is Running!'));
-app.listen(process.env.PORT || 3000, () => console.log("Server is ready"));
+function startProject() {
+    console.log("🚀 বটের ইঞ্জিন চালু হচ্ছে...");
+    const child = spawn("node", ["Goat.js"], {
+        cwd: __dirname,
+        stdio: "inherit",
+        shell: true
+    });
 
-// account.txt চেক করা
-if (!fs.existsSync('account.txt')) {
-    console.error("Error: account.txt ফাইলটি পাওয়া যায়নি!");
-    process.exit(1);
-}
-
-const appState = JSON.parse(fs.readFileSync('account.txt', 'utf8'));
-
-login({appState: appState}, (err, api) => {
-    if(err) return console.error("Login Error: ", err);
-
-    console.log("বট সফলভাবে লগইন হয়েছে!");
-
-    api.listenMqtt((err, event) => {
-        if(err) return;
-        if (event.type === "message") {
-            const msg = event.body ? event.body.toLowerCase() : "";
-
-            if (msg === "hi") {
-                api.sendMessage("Hello! আমি আপনার নিজের তৈরি Goatbot V2.", event.threadID);
-            }
+    child.on("close", (code) => {
+        if (code !== 0) {
+            console.log(`⚠️ বট ক্র্যাশ করেছে (Code: ${code})। ৫ সেকেন্ড পর রিস্টার্ট হচ্ছে...`);
+            setTimeout(startProject, 5000);
         }
     });
+}
+
+app.get('/', (req, res) => res.send('🤖 Citti Smart Bot is Online!'));
+app.listen(port, () => {
+    console.log(`🌐 সার্ভার পোর্ট ${port}-এ সচল।`);
+    startProject();
 });
 
